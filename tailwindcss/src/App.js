@@ -4,12 +4,15 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import user_icon from './user-icon.png';
 import rnp_icon from './rnp-log.png'
 import './cssfile.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ContactUs from './ContactUs'
+
 
 const navigation = [
   { name: 'Home', href: '#', current: true },
   { name: 'Team', href: '#', current: false },
   { name: 'Projects', href: '#', current: false },
-  { name: 'Contact Us', href: '#', current: false },
+  { name: 'Contact Us', href: '/ContactUs', current: false },
 ]
 
 function classNames(...classes) {
@@ -19,6 +22,16 @@ function classNames(...classes) {
 export default function Example() {
   return (
     <>
+
+<BrowserRouter>
+      <Routes>
+        <Route path="ContactUs" element={<ContactUs />}>
+          
+          
+        </Route>
+      </Routes>
+    </BrowserRouter>
+
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
         <>
