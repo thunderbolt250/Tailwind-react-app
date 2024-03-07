@@ -9,7 +9,7 @@ import ContactUs from './ContactUs'
 
 
 const navigation = [
-  { name: 'Home', href: '#', current: true },
+  { name: 'Home', href: '/', current: true },
   { name: 'Login', href: '/LoginSignUp', current: false },
   { name: 'Projects', href: '#', current: false },
   { name: 'Contact Us', href: '/ContactUs', current: false },
