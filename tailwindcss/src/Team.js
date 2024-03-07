@@ -1,61 +1,59 @@
+import './cssfile.css'
+
 const people = [
     {
-      name: 'Leslie Alexander',
-      email: 'leslie.alexander@example.com',
-      role: 'Co-Founder / CEO',
-      imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      name: 'Kamana Gervas',
+      email: 'kamana@rnp.com',
+      role: 'Co-Founder / CEO & Frontend Developer',
+      imageUrl: 'https://scontent.fkgl1-1.fna.fbcdn.net/v/t1.6435-9/94779001_2425222327727332_269324093323476992_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGCujC2k7SEBE5DDoLn-H1GVtJauXyOl4RW0lq5fI6XhM-klkfr_0CshhDM7nJD-r1yC7dxNEaBcl6VhihAtV7Y&_nc_ohc=K-6QrqGxA8QAX_k-xHO&_nc_ht=scontent.fkgl1-1.fna&oh=00_AfD87lMLJqnML13JnJvlOTyU6hukyu0JvzLKO5cPShQzpg&oe=661137E3',
       lastSeen: '3h ago',
       lastSeenDateTime: '2023-01-23T13:23Z',
     },
     {
-      name: 'Michael Foster',
-      email: 'michael.foster@example.com',
-      role: 'Co-Founder / CTO',
+      name: 'Ngabo Prince',
+      email: 'ngaboprince@rnp.com',
+      role: 'Backend Developer',
       imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        'https://scontent.fkgl1-1.fna.fbcdn.net/v/t39.30808-6/295270135_378074521132874_7362317229497358224_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeENXATrSIU7UejZLagmvAsfe6SzAQZkVfd7pLMBBmRV9yxKjdWgiyXJmL5Xc7BUfGF2rOwQ_qSrmkVYAPibnADc&_nc_ohc=YiChp1eEMhUAX-z5j9f&_nc_ht=scontent.fkgl1-1.fna&oh=00_AfBhrtPZGCCjnx8exxudaw0VVcSEk4XNs5wuUJG0DhRF_Q&oe=65EEA018',
       lastSeen: '3h ago',
       lastSeenDateTime: '2023-01-23T13:23Z',
     },
     {
-      name: 'Dries Vincent',
-      email: 'dries.vincent@example.com',
-      role: 'Business Relations',
-      imageUrl:
-        'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      name: 'Mfuranzima Kevine',
+      email: 'mfuranzimak@rnp.com',
+      role: 'Software Designer & Business Relations',
+      imageUrl: 'https://scontent.fkgl1-1.fna.fbcdn.net/v/t1.6435-9/38916091_2181772762104607_4837135805346480128_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGhVa0msITesU0kpRObTQHZ6hRYSc8GU_fqFFhJzwZT9_2imvBUNwaAJdQchtW4d-AvrnQDc-qKFacsEPGvCFuP&_nc_ohc=LeuHxGQ7uTgAX-NDLoT&_nc_ht=scontent.fkgl1-1.fna&oh=00_AfBDlF5GICLxIEOqCBHB19-5VLhTHP2CZiwkxIoaN2iWtA&oe=661141AF',
       lastSeen: null,
     },
     {
-      name: 'Lindsay Walton',
-      email: 'lindsay.walton@example.com',
+      name: 'Mwesigye Emmy',
+      email: 'mwesigye@rnp.com',
       role: 'Front-end Developer',
-      imageUrl:
-        'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      imageUrl: 'https://scontent.fkgl1-1.fna.fbcdn.net/v/t1.6435-1/54514799_2191381477791874_2831588517103009792_n.jpg?stp=dst-jpg_p200x200&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHRJPKyYktGO6rzASwjJzic9fGkbcfdzJb18aRtx93MlhaZBHy5dxPL9LBL7m1hiPoIuY-XRwpSn_VoOaDC1cN6&_nc_ohc=VsHBrPH0oyEAX8uwsRl&_nc_ht=scontent.fkgl1-1.fna&oh=00_AfAfkzs0dlV00u1dk760dNIB_BDOkxEqPCQC0Pzaxiw4_w&oe=6611517B',
       lastSeen: '3h ago',
       lastSeenDateTime: '2023-01-23T13:23Z',
     },
     {
-      name: 'Courtney Henry',
-      email: 'courtney.henry@example.com',
-      role: 'Designer',
-      imageUrl:
-        'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      name: 'Umuhoza Nadia',
+      email: 'umuhozanadia@rnp.com',
+      role: 'Software Tester',
+      imageUrl: 'https://scontent.fkgl1-1.fna.fbcdn.net/v/t1.6435-9/40551418_2230150627227748_2808149407394955264_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEb2x35V1vyIZJEb91BZ2Uq7wN4op84LpDvA3iinzgukOweuETr9QfS-1toHiwa_aQONE_-kR-MHs5qkvLjzlvd&_nc_ohc=VzXIb_xZlDUAX8FAlWA&_nc_ht=scontent.fkgl1-1.fna&oh=00_AfBvXmWF685VwDVB4NEIyDAMBzJ4_nwMPW4rjzCByGIrEQ&oe=66115079',
       lastSeen: '3h ago',
       lastSeenDateTime: '2023-01-23T13:23Z',
     },
     {
-      name: 'Tom Cook',
-      email: 'tom.cook@example.com',
-      role: 'Director of Product',
-      imageUrl:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      name: 'Hagenimana Joe',
+      email: 'hagenimanaj@rnp.com',
+      role: 'Backend Developer',
+      imageUrl: 'https://scontent.fkgl1-1.fna.fbcdn.net/v/t1.6435-9/142146787_2879198125658614_5362150710418629982_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF7aSzfDyisQ-8wkksHI_1kR9W_E5dJeAxH1b8Tl0l4DPB0BtDb-1adBE_a_ayBYAMA6P27-F-iCFIY2bRIl_rq&_nc_ohc=TGoOXezowuUAX8nlBb_&_nc_ht=scontent.fkgl1-1.fna&oh=00_AfC3igCDciN9uBE7GkCg8kOm2OStaMuveiOl03kS8HwBRA&oe=6611402D',
       lastSeen: null,
     },
   ]
   
-  export default function Example() {
+  export default function Team() {
     return (
-      <ul role="list" className="divide-y divide-gray-100">
+      <div className="team">
+        <ul role="list" className="divide-y divide-gray-100">
         {people.map((person) => (
           <li key={person.email} className="flex justify-between gap-x-6 py-5">
             <div className="flex min-w-0 gap-x-4">
@@ -83,6 +81,7 @@ const people = [
           </li>
         ))}
       </ul>
+      </div>
     )
   }
   

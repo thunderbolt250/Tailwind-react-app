@@ -6,6 +6,8 @@ import Navbar from './Navbar'
 import LoginSignUp from './LoginSignUp'
 import Home from './Home'
 import Projects from './Projects';
+import Team from './Team'
+import Profile_settings from './Profile_settings'
 export default function Example() {
   return (
     <>
@@ -18,7 +20,8 @@ export default function Example() {
         <Route path="ContactUs" element={<ContactUs />}/>
         <Route path="LoginSignUp" element={<LoginSignUp />}/> 
         <Route path="Projects" element={<Projects />}/>
-        
+        <Route path="Team" element={<Team />}/>
+        <Route path="Profile_settings" element={<Profile_settings />}/>
       </Routes>
     </BrowserRouter>
     </>
