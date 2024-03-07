@@ -7,7 +7,7 @@ import './cssfile.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ContactUs from './ContactUs'
 import Navbar from './Navbar'
-import LoginSighnUp from './LoginSighnUp'
+import LoginSignUp from './LoginSignUp'
 
 export default function Example() {
   return (
@@ -16,7 +16,7 @@ export default function Example() {
     <BrowserRouter>
       <Routes>
         <Route path="ContactUs" element={<ContactUs />}></Route>
-        <Route path="LoginSighnUp" element={<LoginSighnUp />}> </Route>
+        <Route path="LoginSignUp" element={<LoginSignUp />}> </Route>
           
         
       </Routes>
