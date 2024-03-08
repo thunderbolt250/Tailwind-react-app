@@ -11,6 +11,7 @@ import Profile from './Profile'
 import Settings from './Settings'
 import Signup from './Signup'
 import ForgotPassword from './ForgotPassword'
+import RecoverPassword from './RecoverPassword'
 export default function Example() {
   return (
     <>
@@ -28,6 +29,7 @@ export default function Example() {
         <Route path="Settings" element={<Settings />}/>
         <Route path="ForgotPassword" element={<ForgotPassword />}/>
         <Route path="Signup" element={<Signup />}/>
+        <Route path="RecoverPassword" element={<RecoverPassword />}/>
       </Routes>
     </BrowserRouter>
     </>

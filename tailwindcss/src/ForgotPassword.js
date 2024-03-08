@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import rnp_icon from './rnp-log.png'
+import RecoverPassword from './RecoverPassword'
+import { useNavigate } from 'react-router-dom'
 function ForgotPassword() {
+    const navigate = useNavigate();
   return (
     
 <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 div1" >
@@ -34,11 +37,9 @@ function ForgotPassword() {
               </div>
             </div>
 
-           
-
             <div>
-              <button
-                type="submit"
+              <button onClick={() => navigate("/RecoverPassword")}
+                type="submit" 
                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Search
