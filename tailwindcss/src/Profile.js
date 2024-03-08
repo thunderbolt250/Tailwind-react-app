@@ -1,17 +1,4 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
+
 import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid'
 import './cssfile.css'
 export default function Example() {
@@ -31,14 +18,14 @@ export default function Example() {
               </label>
               <div className="mt-2">
                 <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
-                  <span className="flex select-none items-center pl-3 text-gray-500 sm:text-sm">workcation.com/</span>
+                  <span className="flex select-none items-center pl-3 text-gray-500 sm:text-sm"></span>
                   <input
                     type="text"
                     name="username"
                     id="username"
                     autoComplete="username"
                     className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
-                    placeholder="janesmith"
+                    placeholder="@Thunderbolt"
                   />
                 </div>
               </div>
@@ -151,7 +138,7 @@ export default function Example() {
 
             <div className="sm:col-span-3">
               <label htmlFor="country" className="block text-sm font-medium leading-6 text-gray-900">
-                Country
+                Province
               </label>
               <div className="mt-2">
                 <select
@@ -160,9 +147,11 @@ export default function Example() {
                   autoComplete="country-name"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
                 >
-                  <option>United States</option>
-                  <option>Canada</option>
-                  <option>Mexico</option>
+                  <option>City of Kigali</option>
+                  <option>Eastern</option>
+                  <option>Western</option>
+                  <option>Southern</option>
+                  <option>Northern</option>
                 </select>
               </div>
             </div>
@@ -184,7 +173,7 @@ export default function Example() {
 
             <div className="sm:col-span-2 sm:col-start-1">
               <label htmlFor="city" className="block text-sm font-medium leading-6 text-gray-900">
-                City
+                District
               </label>
               <div className="mt-2">
                 <input
@@ -199,7 +188,7 @@ export default function Example() {
 
             <div className="sm:col-span-2">
               <label htmlFor="region" className="block text-sm font-medium leading-6 text-gray-900">
-                State / Province
+                Sector
               </label>
               <div className="mt-2">
                 <input
@@ -214,7 +203,7 @@ export default function Example() {
 
             <div className="sm:col-span-2">
               <label htmlFor="postal-code" className="block text-sm font-medium leading-6 text-gray-900">
-                ZIP / Postal code
+                Cell
               </label>
               <div className="mt-2">
                 <input
