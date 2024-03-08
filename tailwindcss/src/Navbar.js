@@ -9,7 +9,7 @@ import './cssfile.css'
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
-  { name: 'Login', href: '/LoginSignUp', current: false },
+  { name: 'Login', href: '/Login', current: false },
   { name: 'Team', href: '/Team', current: false },
   { name: 'Projects', href: '/Projects', current: false },
   { name: 'Contact Us', href: '/ContactUs', current: false },
@@ -123,7 +123,7 @@ export default function Example() {
                       </Menu.Item>
                       <Menu.Item>
                         {({ active }) => (
-                          <a href="/LoginSignUp"
+                          <a href="/Login"
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
                             Sign in
