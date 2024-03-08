@@ -7,7 +7,8 @@ import LoginSignUp from './LoginSignUp'
 import Home from './Home'
 import Projects from './Projects';
 import Team from './Team'
-import Profile_settings from './Profile_settings'
+import Profile from './Profile'
+import Settings from './Settings'
 export default function Example() {
   return (
     <>
@@ -21,7 +22,8 @@ export default function Example() {
         <Route path="LoginSignUp" element={<LoginSignUp />}/> 
         <Route path="Projects" element={<Projects />}/>
         <Route path="Team" element={<Team />}/>
-        <Route path="Profile_settings" element={<Profile_settings />}/>
+        <Route path="Profile" element={<Profile />}/>
+        <Route path="Settings" element={<Settings />}/>
       </Routes>
     </BrowserRouter>
     </>
