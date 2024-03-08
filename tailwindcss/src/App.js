@@ -10,6 +10,7 @@ import Team from './Team'
 import Profile from './Profile'
 import Settings from './Settings'
 import Signup from './Signup'
+import ForgotPassword from './ForgotPassword'
 export default function Example() {
   return (
     <>
@@ -25,8 +26,8 @@ export default function Example() {
         <Route path="Team" element={<Team />}/>
         <Route path="Profile" element={<Profile />}/>
         <Route path="Settings" element={<Settings />}/>
+        <Route path="ForgotPassword" element={<ForgotPassword />}/>
         <Route path="Signup" element={<Signup />}/>
-        
       </Routes>
     </BrowserRouter>
     </>
