@@ -9,7 +9,6 @@ import './cssfile.css'
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
-  { name: 'Login', href: '/Login', current: false },
   { name: 'Team', href: '/Team', current: false },
   { name: 'Projects', href: '/Projects', current: false },
   { name: 'Contact Us', href: '/ContactUs', current: false },
@@ -69,6 +68,7 @@ export default function Example() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                
                 <button
                   type="button"
                   className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
@@ -107,7 +107,7 @@ export default function Example() {
                             href="/Profile"
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
-                            Your Profile
+                            Your Profile 
                           </a>
                         )}
                       </Menu.Item>
@@ -133,6 +133,9 @@ export default function Example() {
                     </Menu.Items>
                   </Transition>
                 </Menu>
+                <button Type='submit' className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" >
+                  <a href='/login'>Login</a>
+                </button>
               </div>
             </div>
           </div>

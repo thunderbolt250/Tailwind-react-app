@@ -13,8 +13,7 @@ const people = [
       name: 'Ngabo Prince',
       email: 'ngaboprince@rnp.com',
       role: 'Backend Developer',
-      imageUrl:
-        'https://scontent.fkgl1-1.fna.fbcdn.net/v/t39.30808-6/295270135_378074521132874_7362317229497358224_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeENXATrSIU7UejZLagmvAsfe6SzAQZkVfd7pLMBBmRV9yxKjdWgiyXJmL5Xc7BUfGF2rOwQ_qSrmkVYAPibnADc&_nc_ohc=YiChp1eEMhUAX-z5j9f&_nc_ht=scontent.fkgl1-1.fna&oh=00_AfBhrtPZGCCjnx8exxudaw0VVcSEk4XNs5wuUJG0DhRF_Q&oe=65EEA018',
+      imageUrl: 'https://scontent.fkgl1-1.fna.fbcdn.net/v/t39.30808-6/295311824_378074524466207_1935534788797974280_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGd_VK1iA8pq07G-1V1T2cQqdbV-u7yKbap1tX67vIptn_ctZcoNr8wPJ8o0XaLKWiuYYxv2i1YNVOmVRqIhZQK&_nc_ohc=47RYIee6GXoAX9aGHe6&_nc_ht=scontent.fkgl1-1.fna&oh=00_AfDGykdDvu9KUVjX5TpY2RquARbYGB-6LqfTr4NqSU2FmA&oe=65FFFB96',
       lastSeen: '3h ago',
       lastSeenDateTime: '2023-01-23T13:23Z',
     },

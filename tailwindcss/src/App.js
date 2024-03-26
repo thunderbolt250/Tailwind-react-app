@@ -19,8 +19,7 @@ export default function Example() {
     <BrowserRouter>
       <Routes>
         {/* <Route path="/" element={<Navbar />}/>  */}
-        <Route index element={<Home />} />
-        <Route path="Home" element={<Home />} />
+        <Route index element={<Home />} />         
         <Route path="ContactUs" element={<ContactUs />}/>
         <Route path="Login" element={<Login />}/> 
         <Route path="Projects" element={<Projects />}/>
