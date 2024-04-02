@@ -1,7 +1,55 @@
-import React from 'react'
+import React, { useState } from 'react'
 import rnp_icon from './rnp-log.png'
 import { Link } from 'react-router-dom'
 function Signup() {
+  const [formData, setFormData] = useState ({
+    fname: '',
+    sname:'',
+    email:'',
+    password: '',
+    confirmPassword:''
+  })
+
+  const [errors, setErrors] = useState({
+
+  })
+
+  const handleChange = (e) => {
+    const {name, value} = e.target;
+    setFormData({
+      ...formData, [name] : value
+    })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const validationErrors = {}
+    if(!formData.fname.trim()){
+      validationErrors.fname = "first name is required"
+    }
+    if(!formData.sname.trim()){
+      validationErrors.sname = "second name is required"
+    }
+    if(!formData.email.trim()){
+      validationErrors.email = "email is required"
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)){
+      validationErrors.sname = "email is not valid"
+    }
+    if(!formData.password.trim()){
+      validationErrors.password = "password is required"
+    } else if (!/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(formData.password)){
+      validationErrors.password = "Password must contain at least one number, one uppercase and lowercase letter, a symbol and at least 8 or more characters"
+    }
+    if (formData.confirmPassword !== formData.password){
+      validationErrors.confirmPassword = "password not matched"
+    }
+
+    setErrors(validationErrors)
+    if(Object.keys(validationErrors).length === 0){
+      alert("Account registerd successfully")
+    }
+
+  }
   return (
     
 <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 div1" >
@@ -17,7 +65,8 @@ function Signup() {
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form className="space-y-6" action="#" method="POST">
+          {/*<form className="space-y-6" action="#" method="POST">*/}
+          <form className="space-y-6" onSubmit={handleSubmit}>
 
           <div>
               <label htmlFor="fname" className="block text-sm font-medium leading-6 text-gray-900">
@@ -29,9 +78,11 @@ function Signup() {
                   name="fname"
                   type="text"
                   autoComplete="fname"
-                  required
+                  //required
+                  onChange={handleChange} 
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errors.fname && <span style={{ color: 'red' }}>{errors.fname}</span>}
               </div>
             </div>
 
@@ -45,9 +96,11 @@ function Signup() {
                   name="sname"
                   type="text"
                   autoComplete="sname"
-                  required
+                  //required
+                  onChange={handleChange}                  
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                  {errors.sname && <span style={{ color: 'red' }}>{errors.sname}</span>}
               </div>
             </div>
 
@@ -61,9 +114,11 @@ function Signup() {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  required
+                  //required
+                  onChange={handleChange}
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errors.email && <span style={{ color: 'red' }}>{errors.email}</span>}
               </div>
             </div>
 
@@ -76,10 +131,13 @@ function Signup() {
                   id="password"
                   name="password"
                   type="password"
-                  autoComplete="current-password"
-                  required
+                  //pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  //autoComplete="current-password"
+                  //required
+                  onChange={handleChange}
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errors.password && <span style={{ color: 'red' }}>{errors.password}</span>}
               </div>
             </div>
 
@@ -89,13 +147,15 @@ function Signup() {
                 </label>                
               <div className="mt-2">
                 <input
-                  id="cpassword"
-                  name="cpassword"
+                  id="confirmPassword"
+                  name="confirmPassword"
                   type="password"
-                  autoComplete="current-password"
-                  required
+                  //autoComplete="current-password"
+                  //required
+                  onChange={handleChange}
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errors.confirmPassword && <span style={{ color: 'red' }}>{errors.confirmPassword}</span>}
               </div>
             </div>
 

@@ -13,7 +13,7 @@ function Home() {
               
             </h2>
             <p className="text-base text-gray-700 md:text-lg">
-              We develop RNP systems for different purposes using the latest technology
+              We develop RNP systems for different purposes using the latest technologies
               , libraries and frameworks
             </p>
           </div>
