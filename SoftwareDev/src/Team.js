@@ -8,14 +8,16 @@ const people = [
       imageUrl: 'https://scontent.fkgl1-1.fna.fbcdn.net/v/t1.6435-9/94779001_2425222327727332_269324093323476992_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGCujC2k7SEBE5DDoLn-H1GVtJauXyOl4RW0lq5fI6XhM-klkfr_0CshhDM7nJD-r1yC7dxNEaBcl6VhihAtV7Y&_nc_ohc=K-6QrqGxA8QAX_k-xHO&_nc_ht=scontent.fkgl1-1.fna&oh=00_AfD87lMLJqnML13JnJvlOTyU6hukyu0JvzLKO5cPShQzpg&oe=661137E3',
       lastSeen: '3h ago',
       lastSeenDateTime: '2023-01-23T13:23Z',
+      facebook: 'https://www.facebook.com/profile.php?id=100007187657053',
     },
     {
       name: 'Ngabo Prince',
       email: 'ngaboprince@rnp.com',
       role: 'Backend Developer',
-      imageUrl: 'https://scontent.fkgl1-1.fna.fbcdn.net/v/t39.30808-6/295311824_378074524466207_1935534788797974280_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGd_VK1iA8pq07G-1V1T2cQqdbV-u7yKbap1tX67vIptn_ctZcoNr8wPJ8o0XaLKWiuYYxv2i1YNVOmVRqIhZQK&_nc_ohc=47RYIee6GXoAX9aGHe6&_nc_ht=scontent.fkgl1-1.fna&oh=00_AfDGykdDvu9KUVjX5TpY2RquARbYGB-6LqfTr4NqSU2FmA&oe=65FFFB96',
+      imageUrl: 'https://scontent.fkgl1-1.fna.fbcdn.net/v/t39.30808-6/295270135_378074521132874_7362317229497358224_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeENXATrSIU7UejZLagmvAsfe6SzAQZkVfd7pLMBBmRV9yxKjdWgiyXJmL5Xc7BUfGF2rOwQ_qSrmkVYAPibnADc&_nc_ohc=Xy82WFEdRIoAX9OQUdL&_nc_ht=scontent.fkgl1-1.fna&oh=00_AfC4zbnDleNLkNrrd0XAH2gBCzw0D7nC3NDqwJ-yVxl16Q&oe=66131998',
       lastSeen: '3h ago',
       lastSeenDateTime: '2023-01-23T13:23Z',
+      facebook: 'https://www.facebook.com/princengabo1999',
     },
     {
       name: 'Mfuranzima Kevine',
@@ -23,6 +25,7 @@ const people = [
       role: 'Software Designer & Business Relations',
       imageUrl: 'https://scontent.fkgl1-1.fna.fbcdn.net/v/t1.6435-9/38916091_2181772762104607_4837135805346480128_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGhVa0msITesU0kpRObTQHZ6hRYSc8GU_fqFFhJzwZT9_2imvBUNwaAJdQchtW4d-AvrnQDc-qKFacsEPGvCFuP&_nc_ohc=LeuHxGQ7uTgAX-NDLoT&_nc_ht=scontent.fkgl1-1.fna&oh=00_AfBDlF5GICLxIEOqCBHB19-5VLhTHP2CZiwkxIoaN2iWtA&oe=661141AF',
       lastSeen: null,
+      facebook: 'https://www.facebook.com/kevine.mfuranzima',
     },
     {
       name: 'Mwesigye Emmy',
@@ -31,6 +34,7 @@ const people = [
       imageUrl: 'https://scontent.fkgl1-1.fna.fbcdn.net/v/t1.6435-1/54514799_2191381477791874_2831588517103009792_n.jpg?stp=dst-jpg_p200x200&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHRJPKyYktGO6rzASwjJzic9fGkbcfdzJb18aRtx93MlhaZBHy5dxPL9LBL7m1hiPoIuY-XRwpSn_VoOaDC1cN6&_nc_ohc=VsHBrPH0oyEAX8uwsRl&_nc_ht=scontent.fkgl1-1.fna&oh=00_AfAfkzs0dlV00u1dk760dNIB_BDOkxEqPCQC0Pzaxiw4_w&oe=6611517B',
       lastSeen: '3h ago',
       lastSeenDateTime: '2023-01-23T13:23Z',
+      facebook: 'https://www.facebook.com/thunderbolt250',
     },
     {
       name: 'Umuhoza Nadia',
@@ -39,6 +43,7 @@ const people = [
       imageUrl: 'https://scontent.fkgl1-1.fna.fbcdn.net/v/t1.6435-9/40551418_2230150627227748_2808149407394955264_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEb2x35V1vyIZJEb91BZ2Uq7wN4op84LpDvA3iinzgukOweuETr9QfS-1toHiwa_aQONE_-kR-MHs5qkvLjzlvd&_nc_ohc=VzXIb_xZlDUAX8FAlWA&_nc_ht=scontent.fkgl1-1.fna&oh=00_AfBvXmWF685VwDVB4NEIyDAMBzJ4_nwMPW4rjzCByGIrEQ&oe=66115079',
       lastSeen: '3h ago',
       lastSeenDateTime: '2023-01-23T13:23Z',
+      facebook: 'https://www.facebook.com/umuhoza.nadia.520',
     },
     {
       name: 'Hagenimana Joe',
@@ -46,6 +51,7 @@ const people = [
       role: 'Backend Developer',
       imageUrl: 'https://scontent.fkgl1-1.fna.fbcdn.net/v/t1.6435-9/142146787_2879198125658614_5362150710418629982_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF7aSzfDyisQ-8wkksHI_1kR9W_E5dJeAxH1b8Tl0l4DPB0BtDb-1adBE_a_ayBYAMA6P27-F-iCFIY2bRIl_rq&_nc_ohc=TGoOXezowuUAX8nlBb_&_nc_ht=scontent.fkgl1-1.fna&oh=00_AfC3igCDciN9uBE7GkCg8kOm2OStaMuveiOl03kS8HwBRA&oe=6611402D',
       lastSeen: null,
+      facebook: 'https://www.facebook.com/hagenimana.joseph.5',
     },
   ]
   
@@ -56,9 +62,9 @@ const people = [
         {people.map((person) => (
           <li key={person.email} className="flex justify-between gap-x-6 py-5">
             <div className="flex min-w-0 gap-x-4">
-              <img className="h-12 w-12 flex-none rounded-full bg-gray-50" src={person.imageUrl} alt="" />
+              <a href={person.imageUrl} target='_blank'><img className="h-12 w-12 flex-none rounded-full bg-gray-50" src={person.imageUrl} alt="" /></a>
               <div className="min-w-0 flex-auto">
-                <p className="text-sm font-semibold leading-6 text-gray-900">{person.name}</p>
+              <a href={person.facebook} target='_blank'><p className="text-sm font-semibold leading-6 text-gray-900">{person.name}</p></a>
                 <p className="mt-1 truncate text-xs leading-5 text-gray-500">{person.email}</p>
               </div>
             </div>
