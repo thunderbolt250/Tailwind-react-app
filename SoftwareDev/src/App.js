@@ -12,14 +12,15 @@ import Settings from './Settings'
 import Signup from './Signup'
 import ForgotPassword from './ForgotPassword'
 import RecoverPassword from './RecoverPassword'
-export default function Example() {
+export default function App() {
   return (
     <>
     <Navbar/>
     <BrowserRouter>
       <Routes>
         {/* <Route path="/" element={<Navbar />}/>  */}
-        <Route index element={<Home />} />         
+        <Route index element={<Home />} /> 
+        <Route path="home" element={<Home />}/>        
         <Route path="ContactUs" element={<ContactUs />}/>
         <Route path="Login" element={<Login />}/> 
         <Route path="Projects" element={<Projects />}/>

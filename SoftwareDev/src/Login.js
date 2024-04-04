@@ -1,19 +1,22 @@
-
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import rnp_icon from './rnp-log.png'
+//import { useNavigate } from 'react-router-dom';
 function Login() {
+
+  //const navigate = useNavigate();
+
   const [formData, setFormData] = useState ({
-    fname: '',
-    sname:'',
+    
+    
     email:'',
-    password: '',
-    confirmPassword:''
+    password: ''
   })
 
   const [errors, setErrors] = useState({
 
   })
+
   const handleChange = (e) => {
     const {name, value} = e.target;
     setFormData({
@@ -24,29 +27,27 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault()
     const validationErrors = {}
-    if(!formData.fname.trim()){
-      validationErrors.fname = "first name is required"
-    }
-    if(!formData.sname.trim()){
-      validationErrors.sname = "second name is required"
-    }
+    
+    
     if(!formData.email.trim()){
       validationErrors.email = "email is required"
     } else if (!/\S+@\S+\.\S+/.test(formData.email)){
-      validationErrors.sname = "email is not valid"
+      validationErrors.email = "email is not valid"
     }
     if(!formData.password.trim()){
       validationErrors.password = "password is required"
     } else if (!/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(formData.password)){
       validationErrors.password = "Password must contain at least one number, one uppercase and lowercase letter, a symbol and at least 8 or more characters"
     }
-    if (formData.confirmPassword !== formData.password){
-      validationErrors.confirmPassword = "password not matched"
-    }
+    
 
     setErrors(validationErrors)
     if(Object.keys(validationErrors).length === 0){
-      alert("Account registerd successfully")
+      alert("Login successfully");
+      //navigate('/Team');
+      //window.location.href = '/team';
+      window.open("/home");
+
     }
 
   }
@@ -74,8 +75,8 @@ function Login() {
                 <input
                   id="email"
                   name="email"
-                  type="email"
-                  //autoComplete="email"
+                  //type="email"
+                  autoComplete="email"
                   //required
                   onChange={handleChange}
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"

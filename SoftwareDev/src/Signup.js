@@ -33,7 +33,7 @@ function Signup() {
     if(!formData.email.trim()){
       validationErrors.email = "email is required"
     } else if (!/\S+@\S+\.\S+/.test(formData.email)){
-      validationErrors.sname = "email is not valid"
+      validationErrors.email = "email is not valid"
     }
     if(!formData.password.trim()){
       validationErrors.password = "password is required"
