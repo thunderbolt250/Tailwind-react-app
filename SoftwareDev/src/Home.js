@@ -1,5 +1,5 @@
 import React from 'react'
-import police from './images/police.jpg'
+import ai from './images/ai.webp'
 function Home() {
   return (
     
@@ -45,7 +45,7 @@ function Home() {
         <div>
           <img
             className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
-            src={police}
+            src={ai}
             alt=""
           />
         </div>

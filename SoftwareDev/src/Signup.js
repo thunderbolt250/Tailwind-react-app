@@ -46,7 +46,8 @@ function Signup() {
 
     setErrors(validationErrors)
     if(Object.keys(validationErrors).length === 0){
-      alert("Account registerd successfully")
+      alert("Account registerd successfully go to login")
+      window.open('/login')
     }
 
   }
