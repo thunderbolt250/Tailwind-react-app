@@ -20,7 +20,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <>
+    < >
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
         <>

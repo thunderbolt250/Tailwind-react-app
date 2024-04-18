@@ -1,3 +1,11 @@
+
+import joe from './images/joe.jpg'
+import kg2 from './images/kg2.png'
+import kevine from './images/kevine.jpeg'
+import nadia from './images/nadia.jpeg'
+import tbolt from './images/tbolt.jpeg'
+import Ngabo from './images/ngabo.jpg'
+
 const posts = [
   {
     id: 1,
@@ -12,8 +20,7 @@ const posts = [
       name: 'Kamana Gervais',
       role: 'Co-Founder / CEO and Frontend Developer',
       href: '#',
-      imageUrl:
-        'https://scontent.fkgl1-1.fna.fbcdn.net/v/t1.6435-9/94779001_2425222327727332_269324093323476992_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGCujC2k7SEBE5DDoLn-H1GVtJauXyOl4RW0lq5fI6XhM-klkfr_0CshhDM7nJD-r1yC7dxNEaBcl6VhihAtV7Y&_nc_ohc=K-6QrqGxA8QAX_k-xHO&_nc_ht=scontent.fkgl1-1.fna&oh=00_AfD87lMLJqnML13JnJvlOTyU6hukyu0JvzLKO5cPShQzpg&oe=661137E3',
+      imageUrl: kg2,
     },
   },
   {
@@ -29,8 +36,7 @@ const posts = [
       name: 'Ngabo Prince',
       role: 'Backend Developer',
       href: '#',
-      imageUrl:
-        'https://scontent.fkgl1-1.fna.fbcdn.net/v/t39.30808-6/295270135_378074521132874_7362317229497358224_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeENXATrSIU7UejZLagmvAsfe6SzAQZkVfd7pLMBBmRV9yxKjdWgiyXJmL5Xc7BUfGF2rOwQ_qSrmkVYAPibnADc&_nc_ohc=Xy82WFEdRIoAX9OQUdL&_nc_ht=scontent.fkgl1-1.fna&oh=00_AfC4zbnDleNLkNrrd0XAH2gBCzw0D7nC3NDqwJ-yVxl16Q&oe=66131998',
+      imageUrl: Ngabo,
     },
   },
   {
@@ -46,9 +52,8 @@ const posts = [
       name: 'Mwesigye Emmy',
       role: 'Frontend Developer',
       href: '#',
-      imageUrl:
-        'https://scontent.fkgl1-1.fna.fbcdn.net/v/t1.6435-1/54514799_2191381477791874_2831588517103009792_n.jpg?stp=dst-jpg_p200x200&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHRJPKyYktGO6rzASwjJzic9fGkbcfdzJb18aRtx93MlhaZBHy5dxPL9LBL7m1hiPoIuY-XRwpSn_VoOaDC1cN6&_nc_ohc=VsHBrPH0oyEAX8uwsRl&_nc_ht=scontent.fkgl1-1.fna&oh=00_AfAfkzs0dlV00u1dk760dNIB_BDOkxEqPCQC0Pzaxiw4_w&oe=6611517B',
-    },
+      imageUrl: tbolt
+        },
   },
   {
     id: 4,
@@ -63,9 +68,8 @@ const posts = [
       name: 'Umuhoza Nadia',
       role: 'Software testing',
       href: '#',
-      imageUrl:
-        'https://scontent.fkgl1-1.fna.fbcdn.net/v/t1.6435-9/40551418_2230150627227748_2808149407394955264_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEb2x35V1vyIZJEb91BZ2Uq7wN4op84LpDvA3iinzgukOweuETr9QfS-1toHiwa_aQONE_-kR-MHs5qkvLjzlvd&_nc_ohc=VzXIb_xZlDUAX8FAlWA&_nc_ht=scontent.fkgl1-1.fna&oh=00_AfBvXmWF685VwDVB4NEIyDAMBzJ4_nwMPW4rjzCByGIrEQ&oe=66115079',
-    },
+      imageUrl: nadia
+        },
   },
   {
     id: 5,
@@ -80,8 +84,7 @@ const posts = [
       name: 'Mfuranzima Kevine',
       role: 'Software Designing',
       href: '#',
-      imageUrl:
-        'https://scontent.fkgl1-1.fna.fbcdn.net/v/t1.6435-9/38916091_2181772762104607_4837135805346480128_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGhVa0msITesU0kpRObTQHZ6hRYSc8GU_fqFFhJzwZT9_2imvBUNwaAJdQchtW4d-AvrnQDc-qKFacsEPGvCFuP&_nc_ohc=LeuHxGQ7uTgAX-NDLoT&_nc_ht=scontent.fkgl1-1.fna&oh=00_AfBDlF5GICLxIEOqCBHB19-5VLhTHP2CZiwkxIoaN2iWtA&oe=661141AF',
+      imageUrl: kevine
     },
   },
   {
@@ -97,9 +100,8 @@ const posts = [
       name: 'Hagenimana Joe',
       role: 'Frontend and Backend Developer',
       href: '#',
-      imageUrl:
-        'https://scontent.fkgl1-1.fna.fbcdn.net/v/t1.6435-9/142146787_2879198125658614_5362150710418629982_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF7aSzfDyisQ-8wkksHI_1kR9W_E5dJeAxH1b8Tl0l4DPB0BtDb-1adBE_a_ayBYAMA6P27-F-iCFIY2bRIl_rq&_nc_ohc=TGoOXezowuUAX8nlBb_&_nc_ht=scontent.fkgl1-1.fna&oh=00_AfC3igCDciN9uBE7GkCg8kOm2OStaMuveiOl03kS8HwBRA&oe=6611402D',
-    },
+      imageUrl: joe
+       },
   },
   // More posts...
 ]

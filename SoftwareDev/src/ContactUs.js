@@ -48,7 +48,8 @@ export default function ContactUs() {
     
     if(!formData.phonenumber.trim()){
       validationErrors.phonenumber = "phone number is required"
-    }
+    } 
+    
     if(!formData.message.trim()){
       validationErrors.message = "message is required"
     }
@@ -60,9 +61,10 @@ export default function ContactUs() {
     }
 
   }
-
+  //const phoneNumberPattern = '/^0[0-9]{10}$/';
   return (
-    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+    
+    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8" style={{ paddingTop:'20px'}}>
       <div
         className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
         aria-hidden="true"
@@ -153,27 +155,25 @@ export default function ContactUs() {
                 <select
                   id="currier"
                   name="currier"
-                  className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
+                  style={{ paddingLeft: '10px' }}
+                  className="h-full rounded-md border-0  bg-transparent bg-none py-0 pl-0 pr-2 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
                 >
                   <option>Mtn</option>
                   <option>Airtel</option>                  
                 </select>
-                <ChevronDownIcon
-                  className="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400"
-                  aria-hidden="true"
-                />
-                {errors.currier && <span style={{ color: 'red' }}>{errors.currier}</span>}
+                
               </div>
               <input
                 type="tel"
                 name="phonenumber"
                 id="phonenumber"
                 autoComplete="tel"
+                //pattern= '/^\d{10}$/'
                 onChange={handleChange} 
                 className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
-              {errors.phonenumber && <span style={{ color: 'red' }}>{errors.phonenumber}</span>}
             </div>
+            {errors.phonenumber && <span style={{ color: 'red' }}>{errors.phonenumber}</span>}
           </div>
           <div className="sm:col-span-2">
             <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
